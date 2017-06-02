@@ -4,14 +4,46 @@
 	<meta charset="UTF-8">
 	<title>Hello world</title>
 	<style>
-		
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		a {
+			padding: 15px 30px;
+			text-decoration: none;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #000;
+			font-family: OpenSans,sans-serif;
+			transition: 0.25s ease
+		}
+		.container {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+		}
+		a:hover {
+			background-color: #48CCAD;
+			color: #fff;
+		}
 	</style>
 </head>
 <body>
-	<a href="/akad"></a>	
-	<a href="/alexis"></a>	
-	<a href="/canvas"></a>	
-	<a href="/oxxo"></a>	
-	<a href="/supernova"></a>	
+	<div class="container">
+		<a href="/akad">akad</a>	
+		<a href="/alexis">alexis</a>	
+		<a href="/canvas">canvas</a>	
+		<a href="/oxxo">oxxo</a>	
+		<a href="/supernova">supernova</a>
+	</div>
+		
 </body>
 </html>
