@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-lg-2 col-sm-2 hidden-xs">
+					<a href="/" class="logo"><img src="./img/logo.jpg" alt="laufam"></a>
+				</div>
+				
+				<div class="col-md-3 col-md-push-7 col-lg-2 col-lg-push-8 col-sm-9 col-xs-10">
+					<a href="/" class="logo hidden-sm hidden-md hidden-lg"><img src="./img/logo.jpg" alt="laufam"></a>
+					<div class="top-line-info">
+						<div class="search"><input type="search" placeholder="Поиск"><a href="#"><i class="fa fa-search"></i></a></div>
+						<div class="user"><a href="#"><i class="fa fa-user"></i></a></div>
+						<div class="cart"><a href="#"><i class="fa fa-shopping-cart"></i><span>1</span></a></div>
+					</div>
+					
+				</div>
+				<div class="col-md-7 col-md-pull-3 col-lg-8 col-lg-pull-2 col-sm-1 col-xs-2">
+					<span class="humb hidden-lg hidden-md">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</span>
+					<nav>
+						<ul class="top-line-mnu hidden-xs hidden-sm">
+							<li><a href="./products-list.html">Женское</a></li>
+							<li><a href="./products-list.html">Мужское</a></li>
+                            <li><a href="#">Распродажа</a></li>
+                            <li><a href="#">Как купить</a></li>
+                            <li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<nav class = "hide-menu">
+					<ul class="top-line-mnu-small hidden-lg hidden-md">
+						<li><a href="./products-list.html">Женское</a></li>
+						<li><a href="./products-list.html">Мужское</a></li>
+						<li><a href="#">Распродажа</a></li>
+						<li><a href="#">Как купить</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+    </header>
+
+    <div class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-img">
+                        <div id="gal1">
+                                
+                            <a href="#" data-image="img/goods/1713849959.jpg" data-zoom-image="/img/goods/1713849959.jpg">
+                            <img id="img_01" src="img/goods/1713849959.jpg" />
+                            </a>
+                        
+                            <a href="#" data-image="img/goods/2.jpg" data-zoom-image="img/goods/2.jpg">
+                            <img id="img_01" src="img/goods/2.jpg" />
+                            </a>
+                        
+                            <a href="#" data-image="img/goods/1.jpg" data-zoom-image="img/goods/1.jpg">
+                            <img id="img_01" src="img/goods/1.jpg" />
+                            </a>
+                        
+                            <a href="#" data-image="img/goods/20689943.jpg" data-zoom-image="img/goods/20689943.jpg">
+                            <img id="img_01" src="img/goods/20689943.jpg" />
+                            </a>
+                        
+                        </div>
+                        <div class="zoom-wrap">
+                            <img id = "zoom_1" src="img/goods/1.jpg" data-zoom-image="./img/goods/1.jpg" alt="" >
+                        </div>
+                        
+                        
+                    </div>
+				</div>
+				<div class="col-md-6">
+					<div class="product-info">
+						<div class="product-info-title">
+							<h2>Заголовок продукта</h2></div>
+						<div class="product-info-price">
+							<span class="price">2000 руб</span>
+						</div>
+						<div class="product-info-size">
+							<strong>Размер:</strong>
+							<div class="size-list">
+								
+								<input type="radio" name="color-check" id="1">
+								<label for="1">41</label>
+								<input type="radio" name="color-check" id="2">
+								<label for="2">42</label>
+								<input type="radio" name="color-check" id="3">
+								<label for="3">43</label>
+								<input type="radio" name="color-check" id="4">
+								<label for="4">44</label>
+								<input type="radio" name="color-check" id="5">
+								<label for="5">45</label>
+							</div>
+						</div>
+						<div class="button-wrap">
+							<button class= "button">Добавить в корзину <i class="fa fa-shopping-cart"></i></button>
+						</div>
+						<div class="product-info-desc">
+							<div id = "tabs" class="product-info-desc-head">
+								<ul class="tabs">
+									<li><a href="#desc">Описание</a></li>
+									<li><a href="#more">Подробнее</a></li>
+									<li><a href="#delivery">Доставка</a></li>
+								</ul>
+								<div class="tabs-content">
+									<div id="desc">
+										<p>Lorem ipsum dolor sit, 
+										amet consectetur adipisicing 
+										elit. Sunt consequatur minus 
+										quidem accusamus itaque
+											saepe enim quae illo pariatur 
+											nesciunt, officia cupiditate n
+											obis molestias impedit omnis 
+											ipsa nam inventore asperiores sap
+											iente tempore! Laboriosam 
+											doloribus et earum cupiditate s
+											oluta, optio necessitatib
+											us laudantium reprehenderit? In
+											ventore impedit cupiditate
+											error ipsam voluptate, ullam debitis?</p>
+									</div>
+									<div id="more">
+										<p>Lorem ipsum dolor 
+											sit amet consectetur adipisicing elit.
+											 Odit debitis expedita corporis nisi commodi
+											 , voluptatem excepturi ipsam dolore porro pariatur, saepe velit recusandae
+											  hic fugiat sint odio,
+											   laudantium iste quam? Deserunt dolor, nostrum rerum modi, incidunt saepe iusto blanditiis cum accusantium consectetur quisquam possimus quibusdam id autem nam ex omnis maxime animi, necessitatibus odio minima magni ipsum. Facere veniam hic praesentium rerum ex amet non alias, repudiandae nemo optio, delectus laboriosam esse unde et illo nesciunt dolor asperiores voluptate ut animi perferendis iure tenetur! Hic eum dolorum quam blanditiis iusto minus optio architecto, dolor libero, ipsam molestiae suscipit nesciunt quaerat.</p>
+
+									</div>
+									<div id="delivery">
+										<p>Осуществляется доставка по городам: Харьков, Донецк, Киев, Львов, Кривой рог
+										, Луганск, Ужгород</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+		<div class="main-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="footer-contact">
+							<div class="footer-contact-address">
+								<i class="fa fa-map-marker"></i><span>г.Стрий, ул. Успенская 40б</span>
+							</div>
+							<div class="footer-contact-phone">
+								<i class="fa fa-phone"></i><span>+38 093 572 53 53</span>
+							</div>
+							<div class="footer-contact-mail">
+								<i class="fa fa-envelope"></i><span>example@gmail.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="social-wrap">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-vk"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+            <div class="payment">
+              <i class="fa fa-cc-visa" aria-hidden="true"></i>
+              <i class="fa fa-cc-mastercard"></i>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-line">
+      &copy 2017 Laufam - Все права защищены
+    </div>
+	</footer>
+	
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
