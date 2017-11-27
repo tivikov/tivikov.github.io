@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>
+        body {
+            opacity: 0;
+            overflow-x: hidden;
+        }
+
+        html {
+            background-color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="main-head">
+        <div class="contact-line hidden-xs">
+            <div class="container">
+                <div id="reco-email" class="contact-line-item">
+                    <i class="fa fa-envelope-o"></i>
+                    <span>example@gmail.com</span>
+                </div>
+                <div id="reco-phone" class="contact-line-item">
+                    <i class="fa fa-mobile"></i>
+                    <span>+7 (958) 5815283</span>
+                </div>
+                <div id="reco-address" class="contact-line-item">
+                    <i class="fa fa-map-marker"></i>
+                    <span>г. Москва, ул. Свободы, 35</span>
+                </div>
+            </div>
+        </div>
+        <div class="top-line">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="top-line-logo">
+                        <a href="/">
+                            <img src="./img/logo.jpg">
+                        </a>
+                    </div>
+                    <ul class="top-line-mnu">
+                        <li>
+                            <a href="#">Аренда</a>
+                        </li>
+                        <li>
+                            <a href="#">Продажа</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнеры и клиенты</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger hidden-md hidden-lg">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="mob-mnu-wrap hidden-md hidden-lg">
+                        <div class="mob-mnu">
+                            <div class="top-line-logo">
+                                <a href="/">
+                                    <img src="./img/logo.jpg">
+                                </a>
+                            </div>
+                            <ul class="top-line-mobile-mnu">
+                                <li>
+                                    <a href="#">Аренда</a>
+                                </li>
+                                <li>
+                                    <a href="#">Продажа</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Партнеры и клиенты</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                            </ul>
+                            <div class="contact-line">
+                                <div class="container">
+                                    <div id="reco-email" class="contact-line-item">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <span>example@gmail.com</span>
+                                    </div>
+                                    <div id="reco-phone" class="contact-line-item">
+                                        <i class="fa fa-mobile"></i>
+                                        <span>+7 (958) 5815283</span>
+                                    </div>
+                                    <div id="reco-address" class="contact-line-item">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>г. Москва, ул. Свободы, 35</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="reco-catalog-map" id="map">
+        <script>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: new google.maps.LatLng(-33.91722, 151.23064),
+                    mapTypeId: 'roadmap'
+                });
+
+                var features = [
+                    {
+                        position: new google.maps.LatLng(-33.91721, 151.22630),
+                    }, {
+                        position: new google.maps.LatLng(-33.91539, 151.22820),
+                    }, {
+                        position: new google.maps.LatLng(-33.91747, 151.22912),
+                    }, {
+                        position: new google.maps.LatLng(-33.91910, 151.22907),
+                    }, {
+                        position: new google.maps.LatLng(-33.91725, 151.23011),
+                    }, {
+                        position: new google.maps.LatLng(-33.91872, 151.23089),
+                    }, {
+                        position: new google.maps.LatLng(-33.91784, 151.23094),
+                    }, {
+                        position: new google.maps.LatLng(-33.91682, 151.23149),
+                    }, {
+                        position: new google.maps.LatLng(-33.91790, 151.23463),
+                    }, {
+                        position: new google.maps.LatLng(-33.91666, 151.23468),
+                    }, {
+                        position: new google.maps.LatLng(-33.916988, 151.233640),
+                    }, {
+                        position: new google.maps.LatLng(-33.91662347903106, 151.22879464019775),
+                    }, {
+                        position: new google.maps.LatLng(-33.916365282092855, 151.22937399734496),
+                    }, {
+                        position: new google.maps.LatLng(-33.91665018901448, 151.2282474695587),
+                    }, {
+                        position: new google.maps.LatLng(-33.919543720969806, 151.23112279762267),
+                    }, {
+                        position: new google.maps.LatLng(-33.91608037421864, 151.23288232673644),
+                    }, {
+                        position: new google.maps.LatLng(-33.91851096391805, 151.2344058214569),
+                        type: 'parking'
+                    }, {
+                        position: new google.maps.LatLng(-33.91818154739766, 151.2346203981781),
+                    }, {
+                        position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
+                    }
+                ];
+
+                // Create markers.
+                features.forEach(function (feature) {
+                    var marker = new google.maps.Marker({
+                        position: feature.position,
+                        map: map
+                    });
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAk2DQfWeNOAMlBj2bL2z_PS1Tx2S340Q&callback=initMap">
+        </script>
+    </div>
+
+    <section class="reco-search">
+        <div class="container">
+            <form action="" class="search">
+                <div class="col-md-3">
+                    <select name="type">
+                        <option disabled selected>Все типы</option>
+                        <option value="retail">Торговые помещения</option>
+                        <option value="building">Здания</option>
+                        <option value="office">Офисные помещения</option>
+                        <option value="production">Производственно-складская недвижимость</option>
+                        <option value="office">Офисные помещения</option>
+                        <option value="buisness">Готовый бизнес</option>
+                        <option value="land">Земельные участки</option>
+    
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="col-md-3">
+                    <select name="city">
+                        <option disabled selected>Все города</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Saint Petersburg">Санкт-Петербург</option>
+                        <option value="Kazan">Казань</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="col-md-3">
+                    <select name="district">
+                        <option disabled selected>Все районы</option>
+                        <option value="Arbat">Арбат</option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" placeholder="Минимальная площадь">
+                </div>
+                <div class="col-md-3">
+                    <select name="type">
+                        <option disabled selected>Тип сделки</option>
+                        <option value="lease">Аренда</option>
+                        <option value="sale">Продажа</option>
+                    </select>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="col-md-6">
+                    <label for="amount">Укажите размах цен:</label>
+                    <label id="amount" /></label>
+                    <div id="range"></div>
+                </div>
+                <div class="col-md-3">
+                    <!-- <input type="submit" value="Поиск" class = "button"> -->
+                    <a href="#" class="button">Поиск</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="reco-catalog">
+        <h1 class="reco-catalog-category">Торговые помещения</h1>
+        <div class="reco-catalog-items">
+            <div class="container">
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class = "reco-catalog-item-link" href="./page.html">
+                            <img src="./img/1.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem заглавных силуэт,
+                                лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class="reco-catalog-item-link" href="./page.html">
+                            <img src="./img/kat1.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem
+                                заглавных силуэт, лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class="reco-catalog-item-link" href="./page.html">
+                            <img src="./img/kat2.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem
+                                заглавных силуэт, лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class="reco-catalog-item-link" href="./page.html">
+                            <img src="./img/4.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem
+                                заглавных силуэт, лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class="reco-catalog-item-link" href="./page.html">
+                            <img src="./img/3.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem
+                                заглавных силуэт, лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="reco-catalog-item">
+                        <a class = "reco-catalog-item-link" href="./page.html">
+                            <img src="./img/2.jpg">
+                        </a>
+                        <div class="reco-catalog-item-info">
+                            <h3 class="reco-catalog-item-title">Синий сад</h3>
+                            <span class="reco-catalog-item-price">$400, 000</span>
+                            <p class="reco-catalog-item-desc">Далеко-далеко ghbdtn ghbdtn ghbdtn ghdbtn ghbdtn ghbdtn ghbdtn за словесными горами в стране гласных и согласных живут рыбные тексты. Дороге наш то путь lorem заглавных силуэт,
+                                лучше дал над, предложения раз его, парадигматическая назад.</p>
+                        </div>
+                        <div class="reco-catalog-item-icons">
+                            <i class="fa fa-shower"></i><span>3</span>
+                            <i class="fa fa-bed"></i><span>3</span>
+                            <i class="fa fa-area-chart"></i><span>152</span>
+                            <a href="/page.html" class="button-mini button-dark">Информация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="col-md-6 col-sm-6">
+                <div class="social-wrap">
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <ul class="reco-info">
+                    <li>RecoInvest</li>
+                    <li>example@gmail.com</li>
+                    <li>+7 (958) 5815283</li>
+                    <li>г. Москва, ул. Свободы, 35</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+    
+</body>
+
+</html>

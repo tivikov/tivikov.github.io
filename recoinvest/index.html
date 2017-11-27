@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	
+	<header class="main-head">
+		<div class="contact-line hidden-xs">
+			<div class="container">
+					<div id="reco-email" class = "contact-line-item">
+						<i class="fa fa-envelope-o"></i>
+						<span>example@gmail.com</span>
+					</div>
+					<div id="reco-phone" class = "contact-line-item">
+						<i class="fa fa-mobile"></i>
+						<span>+7 (958) 5815283</span>
+					</div>
+					<div id="reco-address" class = "contact-line-item">
+						<i class="fa fa-map-marker"></i>
+						<span>г. Москва, ул. Свободы, 35</span>
+					</div>
+			</div>
+		</div>
+		<div class="top-line">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="top-line-logo">
+						<a href = "/"><img src="./img/logo.jpg"></a>
+					</div>
+					<ul class="top-line-mnu">
+						<li><a href="#">Аренда</a></li>
+						<li><a href="#">Продажа</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Партнеры и клиенты</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+					<div class="hamburger hidden-md hidden-lg">
+						<i class="fa fa-bars"></i>
+					</div>
+					<div class="mob-mnu-wrap hidden-md hidden-lg">
+						<div class="mob-mnu">
+							<div class="top-line-logo">
+								<a href="/">
+									<img src="./img/logo.jpg">
+								</a>
+							</div>
+							<ul class="top-line-mobile-mnu">
+								<li>
+									<a href="#">Аренда</a>
+								</li>
+								<li>
+									<a href="#">Продажа</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Партнеры и клиенты</a>
+								</li>
+								<li>
+									<a href="#">О компании</a>
+								</li>
+							</ul>
+							<div class="contact-line">
+								<div class="container">
+									<div id="reco-email" class="contact-line-item">
+										<i class="fa fa-envelope-o"></i>
+										<span>example@gmail.com</span>
+									</div>
+									<div id="reco-phone" class="contact-line-item">
+										<i class="fa fa-mobile"></i>
+										<span>+7 (958) 5815283</span>
+									</div>
+									<div id="reco-address" class="contact-line-item">
+										<i class="fa fa-map-marker"></i>
+										<span>г. Москва, ул. Свободы, 35</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main-screen" style="background-image: url(./img/bg.jpg);">
+		<div class="reco-title">
+			<h1>Лучшая инвестиция - RecoInvest</h1>
+		</div>
+	</div>
+	<section class="reco-search">
+		<div class="container">
+			<form action="" class = "search">
+				<div class="col-md-3">
+					<select name="type">
+						<option disabled selected>Все типы</option>
+						<option value="retail">Торговые помещения</option>
+						<option value="building">Здания</option>
+						<option value="office">Офисные помещения</option>
+						<option value="production">Производственно-складская недвижимость</option>
+						<option value="office">Офисные помещения</option>
+						<option value="buisness">Готовый бизнес</option>
+						<option value="land">Земельные участки</option>
+						
+					</select>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="col-md-3">
+					<select name="city">
+						<option disabled selected>Все города</option>
+						<option value="Moscow">Москва</option>
+						<option value="Saint Petersburg">Санкт-Петербург</option>
+						 <option value="Kazan">Казань</option>
+						<option value="Ekaterinburg">Екатеринбург</option>
+					</select>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="col-md-3">
+					<select name="district">
+						<option disabled selected>Все районы</option>
+						<option value="Arbat">Арбат</option>
+					</select>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="col-md-3">
+					<input type="text" placeholder="Минимальная площадь">
+				</div>
+				<div class="col-md-3">
+					<select name="type">
+						<option disabled selected>Тип сделки</option>
+						<option value="lease">Аренда</option>
+						<option value="sale">Продажа</option>
+					</select>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="col-md-6">
+						<label for="amount">Укажите размах цен:</label>
+						<label id="amount" /></label>
+					<div id="range"></div>
+				</div>
+				<div class="col-md-3">
+					<!-- <input type="submit" value="Поиск" class = "button"> -->
+					<a href="./catalog.html" class="button">Поиск</a>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="reco-categories">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					 <div class="reco-categories-item-img">
+						 <img src="./img/kat1.jpg">
+					 </div>
+					 <h3 class="reco-categories-item-title">Торговые помещения</h3>
+					 <div class="reco-categories-item-buttons">
+						 <a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						 <a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					<div class="reco-categories-item-img">
+						<img src="./img/kat2.jpg">
+					</div>
+					<h3 class="reco-categories-item-title">Здания</h3>
+					<div class="reco-categories-item-buttons">
+						<a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						<a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					<div class="reco-categories-item-img">
+						<img src="./img/kat3.jpg">
+					</div>
+					<h3 class="reco-categories-item-title">Офисные помещения</h3>
+					<div class="reco-categories-item-buttons">
+						<a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						<a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					<div class="reco-categories-item-img">
+						<img src="./img/kat4.jpg">
+					</div>
+					<h3 class="reco-categories-item-title">Производственно-складская недвижимость</h3>
+					<div class="reco-categories-item-buttons">
+						<a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						<a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					<div class="reco-categories-item-img">
+						<img src="./img/kat5.jpg">
+					</div>
+					<h3 class="reco-categories-item-title">Готовый бизнес</h3>
+					<div class="reco-categories-item-buttons">
+						<a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						<a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reco-categories-item">
+					<div class="reco-categories-item-img">
+						<img src="./img/kat6.jpg">
+					</div>
+					<h3 class="reco-categories-item-title">Земельные участки</h3>
+					<div class="reco-categories-item-buttons">
+						<a href="./catalog.html" class="button button-light button-small">Аренда</a>
+						<a href="./catalog.html" class="button button-light button-small">Продажа</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="col-md-6 col-sm-6">
+				<div class="social-wrap">
+					 <a href="#"><i class="fa fa-vk"></i></a>
+					 <a href="#"><i class="fa fa-facebook"></i></a>
+					 <a href="#"><i class="fa fa-twitter"></i></a>
+					 <a href="#"><i class="fa fa-instagram"></i></a>
+					 <a href="#"><i class="fa fa-whatsapp"></i></a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<ul class="reco-info">
+					<li>RecoInvest</li>
+					<li>example@gmail.com</li>
+					<li>+7 (958) 5815283</li>
+					<li>г. Москва, ул. Свободы, 35</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
