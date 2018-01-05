@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <title>RoboGo! Buy</title>
+</head>
+<header>
+  <a href="index.html">
+    <div class="header-logo">
+      Robo<span>Go!</span><span class="reg">&reg;</span>
+    </div>
+  </a>
+</header>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+  <div class="container container--buy">
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="idea.html">Idea</a></li>
+          <li><a href="vehicles.html">Vehicles</a></li>
+          <li><a href="reasons.html">Reasons</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="about.html">About & News</a></li>
+          <li><a href="investors.html">Investors</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="buy-content">
+      <h2 class="buy-title">
+        Main terms:
+      </h2>
+      <p class="buy__description">
+        From <span class="red">05/2018</span> (or early) are available <span class="red">test models</span> of RoboGo!  #1 (Kiddy – payload 50 kg) and #2 (Mini – payload 200 kg)
+      </p>
+      <p class="buy__description">
+        From <span class="red">08/2018</span> (or early) are available <span class="red">test models </span> of RoboGo! #3 & #4
+      </p>
+      <p class="buy__description">
+        Permissions for autonomous driving and/or remote control driving are depending on countries and still in process.
+      </p>
+      <p class="buy__description">
+        Start <span class="red">commercial delivery</span> of vehicles – from <span class="red">08/2018</span>
+      </p>
+    </div>
+    <div class="buy-form">
+      <div class="buy-form-title">Order RoboGo!</div>
+
+      <form action="" class="buy__form">
+        <div class="form__col">
+
+          <select required name="buy-chosemodel" id="buy-chose-model">
+            <option value="">Choose your model</option>
+            <option value="#1">#1</option>
+            <option value="#2">#2</option>
+            <option value="#3">#3</option>
+            <option value="#4">#4</option>
+          </select>
+
+          <select required name="buy-chosemodel-type" id="buy-chose-model-type">
+            <option value="">Choose model type</option>
+            <option value="test-model">Test model</option>
+            <option value="commercial-model">Commercial model</option>
+          </select>
+
+          <input required type="text" name="buy-number-of-vehicle" placeholder="Expected numbers of vehicle to buy	">
+
+          <input required placeholder="Date you are ready to start with us" type="text" name="buy-date" onfocus="(this.type='date')" onblur="(this.type='text')" id="buy-date">
+        </div>
+        <div class="form__col">
+          <input required name="company-name" type="text" placeholder="Your company name">
+          <input required name="user-name" type="text" placeholder="Your Name">
+          <input required name="user-position" type="text" placeholder="Your position">
+          <input required name="user-email" type="email" placeholder="Your E-mail">
+          <input required name="other-way-to-contact" type="text" placeholder="Other way to contact">
+        </div>
+        <div class="form__col">
+          <textarea name="buy-comments" placeholder="Your comments"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="jquery.arctext.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
