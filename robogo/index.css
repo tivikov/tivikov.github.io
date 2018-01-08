@@ -93,7 +93,6 @@ header a {
   -ms-flex-align: flex-start;
   padding: 0 10px;
   box-sizing: border-box;
-  height: auto;
 }
 
 .container--buy {
@@ -179,11 +178,12 @@ header a {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
+  padding: 20px 0;
 }
 
 .idea-circle {
-  width: 256px;
-  height: 256px;
+  width: 180px;
+  height: 180px;
   background: #b40000;
   border: 5px solid #fff;
   border-radius: 100%;
@@ -202,6 +202,8 @@ header a {
 .idea-circle img {
   display: block;
   margin: 0 auto;
+  width: 80px;
+  margin-top: -15px;
 }
 
 .idea-circle-mini {
@@ -248,14 +250,14 @@ header a {
   font-size: 36px;
   color: #fff;
   display: inline-block;
-  margin-top: -35px;
+  margin-top: -65px;
   text-align: center;
   background: url('img/idea/idea-moneyicon.png') left no-repeat;
 }
 
 .idea-text-down {
   position: absolute;
-  bottom: -35px;
+  bottom: -50px;
   left: calc(50% - 185px);
   font-size: 36px;
   color: #fff;
@@ -308,8 +310,8 @@ header a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  margin-top: 75px;
-  padding-bottom: 35px;
+  margin-top: 35px;
+  padding-bottom: 5px;
   max-width: 1024px;
   justify-content: space-around;
   -webkit-box-pack: justify;
@@ -324,7 +326,7 @@ header a {
 
 .idea-remote-control img {
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 
 .idea-remote-control span {
@@ -334,8 +336,9 @@ header a {
 
 .idea-connect {
   position: absolute;
-  right: 15px;
-  top: -90px;
+  right: 50px;
+  top: -50px;
+  width: 100px;
 }
 
 .idea-charging-stations {
@@ -419,6 +422,9 @@ header a {
 
 .news {
   width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .news-items {
@@ -477,7 +483,7 @@ header a {
 
 .investors-description svg {
   width: 25px;
-  height: auto;
+  height: 25px;
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
@@ -523,14 +529,14 @@ header a {
 }
 
 .reasons__title {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   padding-left: 40px;
   margin: 10px 0;
 }
 
 .reasons__subtitle {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
   padding-left: 40px;
   margin: 10px 0;
@@ -541,13 +547,13 @@ header a {
 }
 
 .reasons__advantages {
-  margin-top: 45px;
+  margin-top: 5px;
 }
 
 .reasons__advantages li {
   list-style: none;
   padding: 3px 0;
-  font-size: 27px;
+  font-size: 21px;
 }
 
 .reasons__advantages li span {
@@ -557,7 +563,7 @@ header a {
 
 .reasons__advantages svg {
   width: 25px;
-  height: auto;
+  height: 25px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2px;
@@ -566,7 +572,9 @@ header a {
 .reasons__table {
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 55px;
 }
 
 .reasons__table-title {
@@ -581,7 +589,7 @@ header a {
 }
 
 .reasons__table table td {
-  font-size: 24px;
+  font-size: 21px;
   color: #939394;
   padding: 0;
   border-bottom: 1px solid #383b3f;
@@ -659,13 +667,7 @@ header a {
   padding: 10px;
   position: relative;
   opacity: 0;
-  transition: 1s;
 }
-
-.main__content-features:hover {
-  opacity: 1;
-}
-
 .main__content-dot {
   height: 15px;
   width: 15px;
@@ -682,13 +684,9 @@ header a {
   box-shadow: 0 0 0 0 rgb(255, 255, 255);
 }
 
-.main__content-dot:hover {
+.dots-hovered {
   transform: scale(1.2);
   box-shadow: 0 0 0 5px rgb(255, 255, 255);
-}
-
-.main__content-dot:hover+.main__content-features {
-  opacity: 1;
 }
 
 .main__content-features-title {
@@ -850,6 +848,12 @@ header a {
   box-sizing: border-box;
 }
 
+.buy-form {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
 .buy-content {
   background-color: #6c6c6c;
   padding: 0 12px;
@@ -863,6 +867,7 @@ header a {
 
 .buy-content p {
   font-size: 13px;
+  margin: 11px 0;
 }
 
 .buy-content p .red {
@@ -935,6 +940,12 @@ header a {
 
 .start__image {
   opacity: 0;
+  transition: 0.5s;
+}
+
+.transform {
+  transform: translateX(1000%);
+  transition: 2.5s;
 }
 
 .start__button {
@@ -965,7 +976,10 @@ header a {
   font-size: 25px;
   font-weight: 700;
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /* MOVEMENT ANIMATION */
