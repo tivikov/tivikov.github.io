@@ -117,6 +117,12 @@ header a {
   height: 100vh;
 }
 
+.container--news {
+  background: url('img/news/news-bg.png') top no-repeat;
+  background-size: contain;
+  background-color: #303438;
+}
+
 .container--about .menu,
 .container--investors .menu,
 .container--reasons .menu {
@@ -144,7 +150,7 @@ header a {
 
 .menu li {
   display: inline-block;
-  padding-right: 10%;
+  padding-right: 8%;
 }
 
 .menu li:last-of-type {
@@ -420,6 +426,8 @@ header a {
   border-color: #fff;
 }
 
+/* NEWS PAGE */
+
 .news {
   width: 100%;
   position: absolute;
@@ -427,35 +435,72 @@ header a {
   bottom: 0;
 }
 
-.news-items {
+.news-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+.news-items-wrapper {
+  padding: 0 35px;
+}
+
+.news-item {
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  background: rgba(0, 0, 0, 0.44);
-  padding: 9px 25px;
-  justify-content: space-between;
+
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+
+  padding-bottom: 20px;
 }
 
-.news-item a {
-  text-decoration: none;
+.news-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.news-title {
-  width: 100%;
-  font-size: 32px;
-  padding-left: 35px;
-  box-sizing: border-box;
+.news-item-image {
+  margin-right: 15px;
+}
+
+.news-item-count {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.news-item-date {
+  font-size: 14px;
+  opacity: .5;
+  margin-bottom: 22px;
 }
 
 .news-item-title {
-  background: #fff;
-  padding: 5px 10px 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
+.news-item-description {
+  max-width: 400px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.news-item-readmore {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.news-item-readmore a {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #b40000;
+}
 
 /* INVSETORS PAGE */
 
@@ -797,7 +842,7 @@ header a {
 }
 
 .vehicle-item img {
-  width: 100px;
+  width: 150px;
   display: block;
   margin: 0 auto;
 }
