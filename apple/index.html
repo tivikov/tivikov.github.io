@@ -18,11 +18,11 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#3a6794">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#3a6794">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#3a6794">
 
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
@@ -31,6 +31,19 @@
 <body>
 
 	<div class="apple-wrapper">
+		<a href="#" class="callback-button" onclick="openCallback(); return false">
+			<i class="fa fa-phone fa-3x"></i>
+		</a>
+		<div id="callback">
+			<span class="callback-title">Оставьте Ваш телефон и мы Вам перезвоним!</span>
+			<form onclick="return false">
+				<div class="wrap-callback-form">
+					<input type="tel" id="callback-phone">
+					<button>Отправить</button>
+				</div>
+			</form>
+			<span class="callback-form-close" onclick="closeCallback();">&times;</span>
+		</div>
 		<header class="apple-head" style="background-image: url('img/bg.png')" id="head">
 			<div class="top-line">
 				<h3 class="site-name">
